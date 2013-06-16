@@ -1,0 +1,29 @@
+<%= style('distancr') %>
+
+<div class='distancr'>
+  <form action='/distancr' method='post'>
+  <table>
+  	<tr>
+	    <td><label for='origin'><b> Origin </b></label></td>
+      <td><input type='text' id='origin' name='origin' /><td>
+    </tr><tr>
+      <td><label for='destination'><b> Destination </b></label></td>
+      <td><input type='text' name='destination' /></td>
+    </tr>
+    <tr>
+      <td colspan='2' class='submit'><input type='Submit' value='Get Distance' /></td>
+    </tr>
+  </table>
+</form>
+
+  <% if @distance %>
+    <div class='distance'>
+      <%= @distance.round(2) %> miles<br/>
+      <img class='origin_pic' 
+        src=<%= map_image(@origin, 15) %> />
+      <img class='dest_pic' 
+        src=<%= map_image(@destination, 15) %> />
+    </div>
+  <% end %>
+
+</div>

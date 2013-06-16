@@ -1,0 +1,33 @@
+.distancr {
+	border: 1px solid black;
+	margin: 10% auto;
+	padding: 4%;
+	width: 63.4%;
+}
+
+form { margin: 0 auto; width: 70%; }
+td {
+  padding: 2%; 
+}
+
+label {
+  padding: 3%;
+}
+.submit {
+    padding-top: 9%;
+    text-align: center;
+    width: 0%
+}
+.distance {
+  border: 1px solid black;
+  margin-top: 5%; padding: 5%;
+  border-radius: 10px;
+  background: green;
+  color: white; font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+}
+
+.origin_pic, .dest_pic {
+ height: 250px;   
+}

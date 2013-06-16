@@ -1,0 +1,41 @@
+
+<% if !@tweets %>
+
+  <div>  
+    <table>
+    	<thead>
+    		<th colspan='2'> Search Twitter </th>
+    	</thead>
+    <tr>
+    <!--	<td>
+      <form action='/post' method="post">
+     	  <input type="text" name="tweet" placeholder="Enter new tweet" />
+     	  <input type="submit" value="Tweet" />
+      </form>
+      </td> -->
+        <form action='/sinattr' method="post">
+        <td>
+     	    <input type="text" name="what" placeholder="Tweets about..." />
+        </td><td>
+          <input type="text" name="location" placeholder="Near..." />
+     	    <input type="submit" value="Search" />
+        </form>
+      </td>
+    </tr>
+    </table>
+  </div>
+
+<% else %>
+
+  	<% @results.each do |tweet| %>
+      <div class='tweet'> 
+        <img src="<%= tweet.user.profile_image_url %>" />
+        <div class='tweet_stuff'>
+          <span class='tweet_user'><%= tweet.user.screen_name %></span><br/>
+          <span class='tweet_text'><%= tweet.text %></span><br/>
+          <span> <%= tweet.user.location %></span>
+        </div>
+      </div>
+  	<% end %>
+    
+<% end %>

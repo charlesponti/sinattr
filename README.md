@@ -1,0 +1,1 @@
+This is the best Sinatra boilerplate you're going to find!

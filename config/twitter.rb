@@ -23,7 +23,7 @@ def prepare_access_token(oauth_token, oauth_token_secret)
 end
  
 # Exchange our oauth_token and oauth_token secret for the AccessToken instance.
-access_token = prepare_access_token("966006937-GScmtT3FKBbC5FL64B3p6VjIJieKXcxxLImjwcnY", "9tei1DuM4UVvlMeDgRxEJUJxKZGJEJfZrXe5XrUJLI")
+access_token = prepare_access_token("YOUR_OAUTH_TOKEN", "YOUR_OAUTH_SECRET")
 
 # use the access token as an agent to get the home timeline
 response = access_token.request(:get, "https://api.twitter.com/1.1/statuses/home_timeline.json")

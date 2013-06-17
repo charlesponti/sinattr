@@ -1,1 +1,1 @@
-This is the best Sinatra boilerplate you're going to find!
+Sinatra-based app utilizing Geocoder and Twitter gems for Tweet data mining

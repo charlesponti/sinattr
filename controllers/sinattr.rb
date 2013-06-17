@@ -1,5 +1,6 @@
 require 'twitter'
 require 'oauth'
+require 'oj'
 require './config/twitter'
 
 get('/sinattr') { @title = 'sinattr'; erb :sinattr }
@@ -9,14 +10,12 @@ get('/sinattr') { @title = 'sinattr'; erb :sinattr }
 #  redirect '/sinattr'
 #}
 
-post('/sinattr') { 
-  @tweets = Twitter.search(params[:what], :count => 10000)
-  @location = params[:location]
-  @results = []
-  @tweets.results.map do |tweet|
-  	if get_distance(lat_long(tweet.user.location), @location) < 250
-  		@results << tweet
-  	end
-  end
+post('/sinattr') {
+  @near = lat_long(params[:location])
+  @radius = params[:radius]
+  @tweets = Twitter.search(params[:what],
+                   :geocode => "#{@near[0]},#{@near[1]},#{@radius}mi",
+                   :result_type => "recent",
+                   :count => 50)
   erb :sinattr
 }

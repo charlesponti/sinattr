@@ -10,6 +10,7 @@ GEM
     multi_json (1.7.7)
     multipart-post (1.2.0)
     oauth (0.4.7)
+    oj (2.0.14)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -43,6 +44,7 @@ PLATFORMS
 DEPENDENCIES
   geocoder
   oauth
+  oj
   sinatra
   sinatra-contrib
   thin

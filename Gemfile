@@ -5,6 +5,7 @@ gem 'sinatra-contrib'
 
 gem 'oauth'
 gem 'twitter'
+gem 'oj'
 
 gem 'geocoder'
 

@@ -35,6 +35,10 @@ html, body { height: 100%; width: 100%; font-family: 'Fauna One', serif;}
   overflow-y: auto;
 }
 
+table {
+ margin: 0 auto;    
+}
+
 .tweet {
   border-radius: 10px;
   margin-bottom: 2%;  

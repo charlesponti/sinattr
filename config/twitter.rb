@@ -3,14 +3,14 @@ require 'oauth'
 require './config/twitter'
 
 Twitter.configure do |config|
-  config.consumer_key = 'JiGenoMMQZR0NDCaM3gCcw'
-  config.consumer_secret = 'p5nd4l4UMrr0X1rsKlhyaiEB0h6vCE7ujM8MyZ7hY'
-  config.oauth_token = '966006937-GScmtT3FKBbC5FL64B3p6VjIJieKXcxxLImjwcnY'
-  config.oauth_token_secret = '9tei1DuM4UVvlMeDgRxEJUJxKZGJEJfZrXe5XrUJLI'
+  config.consumer_key = 'YOUR_CONSUMER_KEY'
+  config.consumer_secret = 'YOUR_CONSUMER_SECRET'
+  config.oauth_token = "YOUR_OAUTH_TOKEN"
+  config.oauth_token_secret = 'YOUR_OAUTH_SECRET'
 end
 
 def prepare_access_token(oauth_token, oauth_token_secret)
-  consumer = OAuth::Consumer.new("JiGenoMMQZR0NDCaM3gCcw", "p5nd4l4UMrr0X1rsKlhyaiEB0h6vCE7ujM8MyZ7hY",
+  consumer = OAuth::Consumer.new("YOUR_CONSUMER_KEY", "YOUR_CONSUMER_SECRET",
     { :site => "http://api.twitter.com",
       :scheme => :header
     })

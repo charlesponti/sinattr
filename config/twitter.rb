@@ -5,7 +5,11 @@ require './config/twitter'
 Twitter.configure do |config|
   config.consumer_key = 'YOUR_CONSUMER_KEY'
   config.consumer_secret = 'YOUR_CONSUMER_SECRET'
+<<<<<<< HEAD
   config.oauth_token = 'YOUR_OAUTH_TOKEN'
+=======
+  config.oauth_token = "YOUR_OAUTH_TOKEN"
+>>>>>>> ff45ea8628755f2300786c211f382daf9a67439e
   config.oauth_token_secret = 'YOUR_OAUTH_SECRET'
 end
 

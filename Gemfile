@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '>= 1.4.3'
-gem 'sinatra-contrib', '>= 1.4.0'
+gem 'sinatra', '>= 2.0.2'
+gem 'sinatra-contrib', '>= 2.0.2'
 
 gem 'oauth'
-gem 'twitter'
+gem 'twitter', '>= 4.8.1'
 gem 'oj'
 
 gem 'geocoder'

@@ -7,7 +7,7 @@ gem 'oauth'
 gem 'twitter', '>= 4.8.1'
 gem 'oj'
 
-gem 'geocoder'
+gem 'geocoder', '>= 1.6.1'
 
 #server
 gem 'thin', '>= 1.5.1'

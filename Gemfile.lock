@@ -16,7 +16,7 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
     eventmachine (1.2.7)
-    geocoder (1.1.8)
+    geocoder (1.6.1)
     http (3.3.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -82,7 +82,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  geocoder
+  geocoder (>= 1.6.1)
   oauth
   oj
   sinatra (>= 2.0.2)
@@ -91,4 +91,4 @@ DEPENDENCIES
   twitter (>= 4.8.1)
 
 BUNDLED WITH
-   1.16.1
+   1.17.3

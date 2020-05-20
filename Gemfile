@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sinatra', '>= 2.0.3'
-gem 'sinatra-contrib', '>= 2.0.3'
+gem 'sinatra-contrib', '>= 2.0.4'
 
 gem 'oauth'
 gem 'twitter', '>= 4.8.1'

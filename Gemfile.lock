@@ -21,7 +21,7 @@ GEM
     mustermann (1.0.3)
     oauth (0.4.7)
     oj (2.0.14)
-    rack (2.0.6)
+    rack (2.2.3)
     rack-protection (2.0.4)
       rack
     simple_oauth (0.2.0)

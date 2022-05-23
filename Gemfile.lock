@@ -10,7 +10,7 @@ GEM
     multipart-post (1.2.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    oauth (0.4.7)
+    oauth (0.5.5)
     oj (2.0.14)
     rack (2.2.3)
     rack-protection (2.2.0)
